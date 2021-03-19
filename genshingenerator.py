@@ -1,8 +1,8 @@
 import json
 import requests
 
-def createAcc(username, password):
-    success = False
+def createAcc(kydiudtp, Jordgubbe66):
+    success = True
     payload = "is_crypto=false&not_login=0&username="+username+"&password="+password
     headers = {'Content-Type':'application/x-www-form-urlencoded'}
     req = requests.session()
@@ -15,7 +15,7 @@ def createAcc(username, password):
         print("error")
     return success    
 ignlist = open("igns.txt","r").readlines()
-password = input("Type password: ")
+password = input("Type password: Jordgubbe66")
 output = open('output.txt', 'w')
 created = []
 for x in ignlist:
